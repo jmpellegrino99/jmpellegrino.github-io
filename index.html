@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Personal Website</title>
+    <title>Joe Pellegrino</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <style>
       /* Tab styles */
       .tab {
         overflow: hidden;
-        border-bottom: 2px solid #a12222;
-        background-color: #b99595;
+        border-bottom: 2px solid #ffffff;
+        background-color: #f1f1f1;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
       }
@@ -25,7 +25,7 @@
       }
 
       .tab button:hover {
-        background-color: #ddd;
+        background-color: #680b0f;
       }
 
       .tab button.active {
@@ -45,17 +45,17 @@
 
       /* CV section */
       #CV {
-        background-color: #ffebee;
+        background-color: #ffffff;
       }
 
       /* About section */
       #About {
-        background-color: #f5f5f5;
+        background-color: #ffffff;
       }
 
       /* Links section */
       #Links {
-        background-color: #e0f2f1;
+        background-color: #ffffff;
       }
 
       /* Title page styles */
@@ -64,63 +64,51 @@
         font-family: 'Roboto', sans-serif;
         font-size: 36px;
         margin-top: 50px;
-        color: #555;
+        color: #680b0f;
       }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        color: #41a2c0;
+      }
+      
+      .header-container img {
+        margin-left: auto;
+      }
+
+      .tab {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .roll-in {
+        animation: rollIn 1s ease-in-out;
+      }
+
+      @keyframes rollIn {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
     </style>
   </head>
   <body>
     <div class="title">
-      <h1>My Personal Website</h1>
-      <p>Welcome to my website!</p>
+      <h1>Joe Pellegrino</h1>
+      <img src="megreece.jpg" alt="Me" width="300" height="400" class="roll-in">
     </div>
 
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'CV')">CV</button>
       <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
+      <button class="tablinks" onclick="openTab(event, 'CV')">CV</button>
       <button class="tablinks" onclick="openTab(event, 'Links')">Links</button>
-    </div>
-
-    <div id="CV" class="tabcontent">
-      <h2>CV</h2>
-      <p>Here you can find my CV.</p>
-      <ul>
-        <li>
-          <h3>Education</h3>
-          <ul>
-            <li>
-              <h4>Harvard Unviersity</h4>
-              <p>Bachelor of Arts in Economics, Mathematical Sciences</p>
-              <p>Graduated with Honors, GPA: 3.83</p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3>Work Experience</h3>
-          <ul>
-            <li>
-              <h4>Software Developer, XYZ Corporation</h4>
-              <p>Developed and maintained web applications using PHP and MySQL</p>
-              <p>Collaborated with team members to design and implement new features</p>
-              <p>Implemented best practices for code quality and security</p>
-            </li>
-            <li>
-              <h4>Web Developer, ABC Company</h4>
-              <p>Created and maintained responsive websites using HTML, CSS, and JavaScript</p>
-              <p>Collaborated with designers to ensure visually appealing and user-friendly interfaces</p>
-              <p>Managed website updates and ensured site uptime and performance</p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3>Skills</h3>
-          <ul>
-            <li>Programming languages: Java, Python, JavaScript, PHP</li>
-            <li>Web development frameworks: React, Angular, Laravel</li>
-            <li>Database management: MySQL, MongoDB</li>
-            <li>Version control: Git</li>
-          </ul>
-        </li>
-      </ul>      
     </div>
 
     <div id="About" class="tabcontent">
@@ -128,13 +116,45 @@
       <p>Here you can find information about me.</p>
     </div>
 
+    <div id="CV" class="tabcontent">
+      <h2>CV</h2>
+      <ul>
+        <li>
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <h4>Harvard College <i>(Cambridge, MA: May 2020, GPA: 3.83)</i></h4>
+              <p>Bachelor of Arts <i>(Concentration in Economics, Secondary in Mathematical Sciences)</i></p>
+              <p>Graduated with Honors</p>
+              <p> John Harvard Scholar</p>
+              <p> Detur Book Award</p>
+            </li>
+            <li>
+              <h4>F. S. Bunnell High School <i>(Stratford, CT: June 2017)</i></h4>
+              <p>Valedictorian</p>
+              <p>National Merit Scholar</p>
+              <p>Chairman of Student Mentoring Program</p>
+              <p>SAT: 1590 (of 1600)</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Skills</h3>
+          <ul>
+            <li>Spoken/written languages: English, Spanish, Italian, Latin, Greek</li>
+            <li>Programming languages: Python, R, SQL, Stata</li>
+          </ul>
+        </li>
+      </ul>      
+    </div>
+
     <div id="Links" class="tabcontent">
       <h2>Links</h2>
       <p>Here you can find links to my social media profiles.</p>
       <section>
         <ul>
-          <li><a href="https://www.example.com">Example Website</a></li>
-          <li><a href="https://www.anotherexample.com">Another Example Website</a></li>
+          <li><a href="https://www.linkedin.com/in/jpell99">My LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@joethoughts/">My YouTube channel I hope someday to develop</a></li>
         </ul>
       </section>      
     </div>
