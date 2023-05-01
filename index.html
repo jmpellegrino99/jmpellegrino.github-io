@@ -4,6 +4,7 @@
     <title>Joe Pellegrino</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <style>
+
       /* Tab styles */
       .tab {
         overflow: hidden;
@@ -25,7 +26,7 @@
       }
 
       .tab button:hover {
-        background-color: #680b0f;
+        background-color: #A41034;
       }
 
       .tab button.active {
@@ -58,18 +59,23 @@
         background-color: #ffffff;
       }
 
+      /* Links section */
+      #ContactMe {
+        background-color: #ffffff;
+      }
+
       /* Title page styles */
       .title {
         text-align: center;
         font-family: 'Roboto', sans-serif;
-        font-size: 36px;
-        margin-top: 50px;
-        color: #680b0f;
+        font-size: 30px;
+        margin-top: 10px;
+        color: #A41034;
       }
 
       .header-container {
         display: flex;
-        align-items: center;
+        align-lis: center;
         color: #41a2c0;
       }
       
@@ -98,10 +104,14 @@
       }
 
     </style>
+  <!--Inserts the Medici crest as my website "icon" in the tab:-->
+  <link rel="icon" type="image/jpg" href="medici.jpg">
   </head>
+
   <body>
     <div class="title">
       <h1>Joe Pellegrino</h1>
+      <h3>Affordable Tutoring and Educational Advising</h3>
       <img src="megreece.jpg" alt="Me" width="300" height="400" class="roll-in">
     </div>
 
@@ -109,53 +119,69 @@
       <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
       <button class="tablinks" onclick="openTab(event, 'CV')">CV</button>
       <button class="tablinks" onclick="openTab(event, 'Links')">Links</button>
+      <button class="tablinks" onclick="openTab(event, 'ContactMe')">Contact Me</button>
     </div>
 
     <div id="About" class="tabcontent">
-      <h2>About Me</h2>
-      <p>Here you can find information about me.</p>
+      <h2>Welcome!</h2>
+      <p>I'm a Connecticut native, a 2020 graduate of Harvard College, and a lifelong lover of eduction. From the time I was a student myself, I've had an abiding passion for helping others navigate an educational system oftentimes unattuned to the unique needs of the individual.</p>
+      <p>In the years since, I've offered tutoring services, both <i>pro bono</i> and for hire, to hundreds of students from middle school all the way up to graduate school. Here's a list of the subjects I tend to interact with most, each of which I've offered at least a dozen times:</p>
+      <ul>
+        <li>High-school math (Algebra I through Multivariate Calculus)</li>
+        <li>Physics</li>
+        <li>Latin</li>
+        <li>Spanish</li>
+        <li>U.S. and world history</li>
+        <li>Standardized test prep (SAT, PSAT, ACT)</li>
+        <li>Economics and econometrics</li>
+        <li>Statistics and probability</li>
+      </ul>
+      <p>I've provided guidance, helped  turn <i>D</i>s into <i>A</i>s, and advised on the college admissions process, all at a price well below market average that I feel is better in line with both my values and those of the clients whom I serve.</p>
+      <p>For a conversation about anything you see here, I hope you'll feel most welcome to reach out. You can view further details on the <a href="#" onclick="openTab(event, 'ContactMe')">Contact Me</a> page.</p>
     </div>
 
     <div id="CV" class="tabcontent">
-      <h2>CV</h2>
-      <ul>
-        <li>
-          <h3>Education</h3>
+      <h2>Education</h2>
           <ul>
             <li>
-              <h4>Harvard College <i>(Cambridge, MA: May 2020, GPA: 3.83)</i></h4>
-              <p>Bachelor of Arts <i>(Concentration in Economics, Secondary in Mathematical Sciences)</i></p>
+              <h4>Harvard College (Cambridge, MA: May 2020, GPA: 3.83)</h4>
+              <p>Bachelor of Arts (Concentration in Economics, Secondary in Mathematical Sciences)</p>
               <p>Graduated with Honors</p>
               <p> John Harvard Scholar</p>
               <p> Detur Book Award</p>
             </li>
+          </ul>
+          <ul>
             <li>
-              <h4>F. S. Bunnell High School <i>(Stratford, CT: June 2017)</i></h4>
+              <h4>F. S. Bunnell High School (Stratford, CT: June 2017)</h4>
               <p>Valedictorian</p>
               <p>National Merit Scholar</p>
               <p>Chairman of Student Mentoring Program</p>
               <p>SAT: 1590 (of 1600)</p>
             </li>
           </ul>
-        </li>
-        <li>
-          <h3>Skills</h3>
+      <h2>Skills</h2>
           <ul>
             <li>Spoken/written languages: English, Spanish, Italian, Latin, Greek</li>
             <li>Programming languages: Python, R, SQL, Stata</li>
-          </ul>
-        </li>
-      </ul>      
+          </ul>      
     </div>
 
     <div id="Links" class="tabcontent">
       <h2>Links</h2>
-      <p>Here you can find links to my social media profiles.</p>
+      <p>Here you can find a couple links to my other online presences:</p>
       <section>
         <ul>
           <li><a href="https://www.linkedin.com/in/jpell99">My LinkedIn</a></li>
           <li><a href="https://www.youtube.com/@joethoughts/">My YouTube channel I hope someday to develop</a></li>
         </ul>
+      </section>      
+    </div>
+
+    <div id="ContactMe" class="tabcontent">
+      <h2>Contact Me</h2>
+      <p>Please feel welcome to contact me at the below:</p>
+      <section>
       </section>      
     </div>
 
