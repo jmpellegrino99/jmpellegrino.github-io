@@ -48,6 +48,22 @@
         line-height: 1.6;
       }
 
+      .image-container {
+      position: relative;
+      display: inline-block;
+      }
+
+      .year-annotation {
+      position: absolute;
+      top: 10px; /* Adjust the top position as needed */
+      right: 10px; /* Adjust the right position as needed */
+      background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      }
+
       /* CV section */
       #CV {
         background-color: #ffffff;
@@ -134,7 +150,16 @@
     <div class="title">
       <h1>Joseph Pellegrino</h1>
       <h3><i>Tutoring and Educational Advising</i></h3>
-      <img src="me2.jpg" alt="Me" width="300" height="300" class="roll-in">
+      <div class="image-container">
+        <img src="me1.jpg" alt="Me1" width="300" height="300" class="roll-in"> <div class="year-annotation">2017</div>
+        </div>
+        <div class="image-container">
+        <img src="me3.jpg" alt="Me3" width="300" height="300" class="roll-in"> <div class="year-annotation">2019</div>
+      </div>
+        <div class="image-container">
+        <img src="me2.jpg" alt="Me2" width="300" height="300" class="roll-in"> <div class="year-annotation">2023</div>
+      </div>
+      </div>
     </div>
 
     <div class="tab">
