@@ -7,12 +7,19 @@
 	    
       /* Tab styles */
       .tab {
-        overflow: hidden;
-        border-bottom: 2px solid #ffffff;
-        background-color: #ffffff;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-      }
+      overflow: hidden;
+      width: 350px;
+      margin: 0 auto;  /* Center horizontally */
+      border: 3px double #000000;
+      /* border-bottom: 2px solid #ffffff; */
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      justify-content: center; /* Note: justify-content is typically used with flex containers, not individual elements like this */
+      text-align: center; /* Align text/content to center */
+      display: flex;
+      flex-direction: column;
+    }
 
       .tab button {
         display: inline-block;
@@ -100,7 +107,7 @@
 
       .header-container {
         display: flex;
-        align-lis: center;
+        align-items: center;
         color: #41a2c0;
       }
       
@@ -121,11 +128,6 @@
         margin-bottom: 0.5em;
       }
 
-      .tab {
-        display: flex;
-        flex-direction: column;
-      }
-
       .roll-in {
         animation: rollIn 1s ease-in-out;
       }
@@ -142,11 +144,14 @@
       }
 
     </style>
+
   <!--Inserts the Medici crest as my website "icon" in the tab:-->
   <link rel="icon" type="image/jpg" href="medici.jpg">
+
   </head>
 
   <body>
+
     <div class="title">
       <h1>Joseph Pellegrino</h1>
       <h3><i>Tutoring and Educational Advising</i></h3>
@@ -277,4 +282,5 @@
 	  
 		document.getElementsByClassName("tablinks")[0].click();
 	  </script>
+    
 </body>
